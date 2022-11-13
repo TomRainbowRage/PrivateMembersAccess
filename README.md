@@ -5,7 +5,6 @@ This Script can be used for getting, setting, returning any varible even your ow
 
 Usage:
 
-Put the script inside your modding project.
 
   For Getting Varibles:
     
@@ -16,12 +15,8 @@ Put the script inside your modding project.
     string seter = (string)PrivateRevert.SetPrivateVarible(typeof(ScriptFrom), "name of varible", "change it to", GameObjectThatScriptIsOnInstance);
   
   For Calling Functions:
-    
-    No Return Value:
-      
-      PrivateRevert.RunPrivateFunction(typeof(ScriptFrom), "function name", new object[] { });
-      
-    Return Value:
-      
-      string returnvalue = PrivateRevert.RunPrivateFunction(typeof(Class), "FunctionName", new object[] { });
+  
+    PrivateRevert.RunPrivateFunction(typeof(ScriptFrom), "function name", new object[] { });
+
+    string returnvalue = PrivateRevert.RunPrivateFunction(typeof(Class), "FunctionName", new object[] { });
     
