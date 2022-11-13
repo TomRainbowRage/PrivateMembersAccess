@@ -71,31 +71,7 @@ public class PrivateRevert : MonoBehaviour
         }
 
 
-        public static object SpecialCases(int cas, object[] arguments)
-        {
-            if(cas == 0)
-            {
-                GameManager gm = FindObjectOfType<GameManager>();
-                object o = new object();
-
-                Debug.Log("Game");
-
-
-                Type type = gm.GetType();
-                Debug.Log("Type = " + type);
-
-                MethodInfo methodInfo = type.GetMethod("MovePlayer", BindingFlags.NonPublic | BindingFlags.Instance);
-
-                Debug.Log("mothod = " + methodInfo.Name);
-                o = gm.StartCoroutine(methodInfo.Name, arguments);
-
-                return o;
-            }
-            else
-            {
-                return new object();
-            }
-        }
+        
         
 
 }
