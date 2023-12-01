@@ -8,11 +8,11 @@ Usage:
 
   For Getting Varibles:
     
-    string st = (string)PrivateRevert.GetPrivateVarible(typeof(ScriptFrom), "name of varible", GameObjectThatScriptIsOnInstance);
+    string st = (string)PrivateRevert.GetPrivateVarible(typeof(ScriptFrom), "name of varible", ScriptInstance);
     
   For Setting Varibles:
     
-    string seter = (string)PrivateRevert.SetPrivateVarible(typeof(ScriptFrom), "name of varible", "change it to", GameObjectThatScriptIsOnInstance);
+    string seter = (string)PrivateRevert.SetPrivateVarible(typeof(ScriptFrom), "name of varible", "change it to", ScriptInstance);
   
   For Calling Functions:
   
