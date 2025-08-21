@@ -1,4 +1,7 @@
 # PrivateMembersAccess
+
+# This project is useless since there is a much better reliable way to do this using HarmonyX library.
+
 This Repository is Functions I have made with System.Reflection in C# that call, set and gets private members so modding can be easier
 
 This Script can be used for getting, setting, returning any varible even your own script!
